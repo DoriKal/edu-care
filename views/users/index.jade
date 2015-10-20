@@ -1,0 +1,15 @@
+extends ../layout
+block content
+	div(ng-app="educareModule")
+		h1 {{title-view}}
+
+		div(ng-controller="UsersController", ng-init="getUsers()")
+			div(class="row")
+				div(class="col s12 m12 l12")
+					a(href="#o/create/" class="btn-blue waves-effect waves-orange col s12 m6 offset-m6 l3 offset-l9") Crear
+						i(class="small mdi-social-person add") 
+			div(ng-view)
+	
+	
+	script(src="/javascripts/angular/routes/usersRoute.js")
+	script(src="/javascripts/angular/controllers/UsersController.js")

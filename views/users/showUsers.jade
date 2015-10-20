@@ -1,0 +1,17 @@
+table(ng-init="getUsers()" class="striped responsive-table hoverable")
+	tr
+		th ID
+		th Nombre
+		th Status
+		th(class="center") Actualizar
+		th(class="center") Eliminar
+	tr(ng-repeat="user in users")
+		td {{user.id_usuario}}
+		td {{user.nombre_usu}}
+		td {{user.status_usu}}
+		td(class="center")
+			a(class="btn waves-effect waves-blue btn-small-blue" href="#o/update/{{user.id_usuario}}")
+				i(class="tiny mdi-action-cached")
+		td(class="center")
+			a(class="btn waves-effect waves-red btn-small-red" href="#", ng-click="deleteUser(user.id_usuario)")
+				i(class="tiny mdi-action-delete")

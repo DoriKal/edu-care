@@ -1,0 +1,8 @@
+h5(class="center-align truncate col s12 m12 l12") Crear Usuario
+	form(ng-submit="opcAccionUser()", ng-init="setDataUser()")
+		input(placeholder="nombre", ng-model="user.nombre_usu")
+		input(placeholder="nombre", ng-model="user.status_usu")
+		input(type="submit", value="{{opciones.create?'Crear':'Actualizar'}}")
+
+
+	

@@ -1,0 +1,18 @@
+extends layout
+block content
+	div(class="main")
+		div(class="row")
+			div(class="card-panel teal col s12 m4 offset-m4 l4 offset-l4")
+				div(class="card")
+					img(src="/images/logo/logo-small.svg" alt="Educare" class="responsive-img")
+				form(class="white-text")
+					div(class="row")
+						div(class="input-field col s12")
+							label(for="nombre_usu" class="black-text") Usuario
+							input(id="nombre_usu" type="text" class="validate" required)
+						div(class="input-field col s12")
+							label(for="password_usu" class="black-text") Contraseña
+							input(id="password_usu" type="password" class="validate" required)
+					div(class="row")           
+						button(class="btn waves-effect waves-light col s12" id="btn-user-login") Enviar
+							i(class="mdi-content-send right")
