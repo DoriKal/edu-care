@@ -1,0 +1,44 @@
+body {
+	background: #f2f2f2 radial-gradient(ellipse at center, #f2f2f2 0%, #f2f2f2 120%) 0 0 no-repeat;
+}
+header {
+	position: relative;
+	background-color: #dcdcdc;
+	width: 100%;
+	border-bottom-color: #00a9a3;
+	border-bottom-width: 10px;
+    border-bottom-style: solid;
+}
+header img {
+	margin: 20px;
+}
+
+.box-login {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.input-field label {
+	color: #00a9a3 !important;
+}
+
+.card-panel {
+	border-bottom-color: #00a9a3;
+	border-top-color: #F4823C;
+	border-top-width: 10px;
+    border-top-style: solid;
+	border-bottom-width: 10px;
+    border-bottom-style: solid;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	padding: 30px 0;
+    background: #00a9a3;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'Cabin';
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}

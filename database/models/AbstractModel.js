@@ -41,7 +41,6 @@ AbstractModel.prototype.select = function(jsonKeys, jsonWhere, done) {
       query = "SELECT " + jsonKeys + " FROM " + self.table;
       if (jsonwhere.arrayValues.length > 0){
         query += " WHERE " + jsonwhere.value;
-        console.log(query, jsonwhere.arrayValues);
         connection.query(query, jsonwhere.arrayValues, done);
       } else {
         connection.query(query, done);
