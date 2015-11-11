@@ -1,4 +1,4 @@
-EducareModule.directive("appForUsers", [function() {
+educare.directive("appForUsers", [function() {
 	return {
 		restrict : "E",
 		transclude : true,

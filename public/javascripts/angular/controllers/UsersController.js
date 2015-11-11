@@ -1,4 +1,4 @@
-educareModule.controller("UsersController", ["$scope", "$http", "$routeParams", "$location", function($scope, $http, $routeParams, $location) {
+educare.controller("UsersController", ["$scope", "$http", "$routeParams", "$location", function($scope, $http, $routeParams, $location) {
 
 	$scope.users = [];
 	$scope.user = {};

@@ -1,0 +1,28 @@
+educare.controller("LoginController",["$scope", "$http", "$location", "util", function($scope, $http, $location, util) {
+
+  $scope.login = function() {
+    if(!util.isEmpty($scope.textUser) && !util.isEmpty($scope.textPassword)){
+      $http.post("/auth/login/", {
+        username : $scope.textUser,
+        password : $scope.textPassword
+      }).success(function(login) {
+        console.log(login);
+        if(login.success) {
+          window.location = window.location.pathname==="/login"?"/":"";
+        } else {
+          $scope.textPassword = "";
+          setTimeout(function(){
+              Materialize.toast("Usuario o contraseña incorrectos", 3000);
+          }, 800);
+        }
+      });
+    } else {
+      Materialize.toast("Debes completar los campos", 2000);
+    }
+  };
+
+  $scope.focusInputId = function(id) {
+    document.getElementById(id).focus();
+  };
+
+}]);

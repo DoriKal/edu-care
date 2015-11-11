@@ -1,9 +1,17 @@
 var UserModel = function() {
 	
-	this.setTable("usuario");
+	var self = this;
+	self.setTable("usuario");
 
 	this.getResponsablesPorNinio = function(done) {
-		this.getConnection().query("SELECT * FROM usuario", done);
+		self.getConnection().query("SELECT * FROM usuario", done);
+	};
+
+	this.login = function(user, password, done) {
+		self.select(["id_usuario", "nombre_usu", "status_usu"], {
+			nombre_usu : user,
+			password_usu : password
+		}, done);
 	};
 
 };

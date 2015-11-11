@@ -1,4 +1,4 @@
-educareModule.config(["$routeProvider", function($routeProvider) {
+educare.config(["$routeProvider", function($routeProvider) {
 	$routeProvider.
 	when("/", {templateUrl : "/users/showUsers"}).
 	when("/o/create/", {templateUrl : "/users/o", controller : "UsersController"}).

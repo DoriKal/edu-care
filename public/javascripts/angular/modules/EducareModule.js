@@ -1,1 +1,1 @@
-var educareModule = angular.module("educareModule", ["ngRoute"]);
+var educare = angular.module("educare", ["ngRoute"]);
