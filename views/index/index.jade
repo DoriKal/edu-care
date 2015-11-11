@@ -1,0 +1,24 @@
+extends ../layout
+
+block content
+	nav
+		div(class="nav-wrapper")
+			a(href="#!" class="brand-logo")
+				img(src="/images/logo/logo-small.svg" alt="Educare" class="responsive-img")
+			a(href="#" data-activates="mobile-demo" class="button-collapse")
+				i(class="material-icons") menu
+			ul(class="right hide-on-med-and-down")
+				li
+					a(href="/") Inicio
+				li(id="avatar")
+					a(class='dropdown-button' href='#' data-activates='configuracion')
+						img(src="/images/avatar-user.png" alt="" width="64px")
+					ul(id='configuracion' class='dropdown-content')
+						li
+							a(href="#!") Perfil
+						li(class="divider")
+						li
+							a(href="/logout") Salir
+			ul(class="side-nav" id="mobile-demo")
+				li
+					a(href="/") Inicio

@@ -6,7 +6,6 @@ educare.controller("LoginController",["$scope", "$http", "$location", "util", fu
         username : $scope.textUser,
         password : $scope.textPassword
       }).success(function(login) {
-        console.log(login);
         if(login.success) {
           window.location = window.location.pathname==="/login"?"/":"";
         } else {
