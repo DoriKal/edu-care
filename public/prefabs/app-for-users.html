@@ -1,0 +1,56 @@
+<div id="content">
+	<nav>
+		<div class="nav-wrapper">
+			<a class="brand-logo" href="#!">
+				<img src="/images/logo/logo-small.svg" alt="Educare" class="responsive-img" style="margin-top:13px">
+			</a>
+			<a href="#!" data-activates="mobile-menu" class="button-collapse">
+				<i class="material-icons"> menu</i>
+			</a>
+			<ul class="right hide-on-med-and-down">
+				<li>
+					<a href="/">Inicio</a>
+				</li>
+				<li id="avatar">
+					<a href="#!" class='dropdown-button' data-activates='configuracion'>
+						<img src="/images/avatar-user.png" alt="avatar-user" width="64px">
+					</a>
+					<ul id='configuracion' class='dropdown-content'>
+						<li>
+							<a href="#!">Perfil</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="/logout">
+								Salir
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="side-nav" id="mobile-menu">
+				<div class="center">
+					<br/>
+					<img src="/images/avatar-user.png" alt="" width="64px">
+				</div>
+				<div>
+					<a href="/logout" class="btn waves-effect">Salir</a>
+				</div>
+				<li>
+					<a href="/">Inicio</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<div style="padding-bottom:150px;" ng-transclude></div>
+
+	<footer class="center">
+		<div>
+			<img src="/images/logo/logo-footer.svg">
+		</div>
+		<div>
+			<a href="#!" class="white-text text-lighten-4">&copy; 2015 · Todos los Derechos Reservados.</a>
+		</div>
+	</footer>
+</div>

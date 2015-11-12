@@ -70,3 +70,22 @@ ul.hide-on-med-and-down {
 	height: 64px;
 	overflow: hidden;
 }
+
+#content {
+	position: absolute;
+	width: 100%;
+	min-height: 100% !important;
+}
+
+footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding: 30px 0;
+    background: #00a9a3;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'Cabin';
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
