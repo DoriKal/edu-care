@@ -71,6 +71,11 @@ ul.hide-on-med-and-down {
 	overflow: hidden;
 }
 
+ul.hide-on-med-and-down a {
+	font-size: 1.2rem;
+    color: #26a69a;
+}
+
 #content {
 	position: absolute;
 	width: 100%;
